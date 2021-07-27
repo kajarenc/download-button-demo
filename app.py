@@ -9,6 +9,7 @@ st.title("🥑 Avocado Analytics")
 def generate_file_name(region, avocado_type, start_date, end_date):
     return f"avocado_{region}_{avocado_type}_{str(start_date)}_{str(end_date)}.csv"
 
+
 @st.cache
 def load_data():
     data = pd.read_csv("avocado.csv")
@@ -19,9 +20,8 @@ def load_data():
 
 data = load_data()
 
-
 st.sidebar.download_button(
-    "Download whole file",
+    "Download avocado.csv file",
     data.to_csv(),
     "avocado.csv",
     mime="text/csv"
