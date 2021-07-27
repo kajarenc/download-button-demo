@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 
-st.title("🥑 Avocado Analytics")
+st.title("🥑 Avocado Analytics!")
 
 
 def generate_file_name(region, avocado_type, start_date, end_date):
