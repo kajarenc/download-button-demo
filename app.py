@@ -17,3 +17,9 @@ with st.echo():
         data=None,
         filepath="mmm/international-migration.csv"
     )
+
+    st.download_button(
+        "80 mb file",
+        data=None,
+        filepath="2mSalesRecords.zip"
+    )
