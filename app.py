@@ -1,7 +1,17 @@
 import streamlit as st
 
 with st.echo():
+
+    def click_handler():
+        st.download_button(
+            "This download button will not be rendered",
+            data="Hello world!",
+            file_name="justtext.txt",
+            autodownload=True
+        )
+
     st.title("Download button filepath experiment")
+    st.button("REGULAR BUTTON", on_click=click_handler)
 
     x = st.slider("label for slider", 0, 100, 28)
     st.write(x)
