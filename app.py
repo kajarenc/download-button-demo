@@ -10,7 +10,7 @@ def generate_file_name(region, avocado_type, start_date, end_date):
     return f"avocado_{region}_{avocado_type}_{str(start_date)}_{str(end_date)}.csv"
 
 
-st.metric("LABEL", -3.7, delta_color="off")
+st.metric("LABEL", -3.7)
 
 
 @st.cache
