@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 
+st.set_page_config(page_title="Аналитика по авокадо")
 st.title("🥑 Avocado Analytics!")
 
 
@@ -26,7 +27,7 @@ data = load_data()
 st.sidebar.download_button(
     "Download avocado.csv file",
     data.to_csv(),
-    "avocado.csv",
+    # "avocado.csv",
     mime="text/csv"
 )
 
