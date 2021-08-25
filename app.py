@@ -6,6 +6,9 @@ import plotly.graph_objects as go
 # st.set_page_config(page_title="Аналитика по авокадо")
 st.title("🥑 Avocado Analytics!")
 
+x = st.slider("SLIDER", 0, 100, 25)
+st.write(x)
+
 normal_button_clicked = st.button("JUST CLICK IT!")
 
 if normal_button_clicked:
