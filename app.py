@@ -1,7 +1,7 @@
 import streamlit as st
 
 with st.echo():
-    st.title("Camera image demo!")
+    st.title("Camera image input demo!")
 
     image_file = st.camera_image_input()
 
